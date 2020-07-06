@@ -1,0 +1,321 @@
+#main {
+    background: url(../images/guanwang.jpg) no-repeat center 0;
+}
+
+#nav {
+    position: relative;
+    min-height: 200px;
+    background: url(../images/nav_down_re.png) repeat-x, url(../images/nav.png) no-repeat center 0;
+
+}
+
+#nav .container {
+    min-height: 200px;
+    overflow: hidden;
+}
+
+#nav .nav_logo {
+    width: 138px;
+    height: 112px;
+    margin: 15px auto;
+}
+
+#nav dl {
+    position: absolute;
+    top: 0;
+}
+
+#nav dt {
+    height: 64px;
+
+}
+
+#nav dt a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#nav dd {
+    line-height: 27px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#nav dd a {
+    color: white;
+    position: relative;
+}
+
+#nav dd a:hover {
+    color: #ff4d35;
+    text-decoration: underline;
+}
+
+#nav dd a.hot::after,
+#nav dd a.new::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/nav_tips.png) no-repeat;
+    position: absolute;
+    right: -15px;
+    top: 1px;
+}
+
+#nav dd a.hot::after {
+    background-position: 0 -12px;
+}
+
+#nav .nav_index {
+    width: 60px;
+    left: 0;
+}
+
+#nav .nav_zl {
+    width: 60px;
+    left: 110px;
+}
+
+#nav .nav_sszx {
+    width: 60px;
+    left: 215px;
+}
+
+#nav .nav_hd {
+    width: 60px;
+    left: 335px;
+}
+
+#nav .nav_sczq {
+    width: 60px;
+    left: 580px;
+}
+
+#nav .nav_spzb {
+    width: 60px;
+    left: 700px;
+}
+
+#nav .nav_wjhd {
+    width: 60px;
+    left: 815px;
+}
+
+#nav .nav_kf {
+    width: 80px;
+    left: 905px;
+}
+
+#link {
+    width: 365px;
+    height: 235px;
+}
+#link a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+#banner{
+    height: 276px;
+    background: url(../images/top.png) no-repeat;
+}
+#banner .banner_left{
+    width: 240px;
+    height: 310px;
+    background: url(../images/down_user_spr.png) no-repeat;
+    margin: -24px 0 0 5px;
+}
+#banner .banner_download p{
+    width: 91px;
+    height: 25px;
+    background: url(../images/down_user_spr.png) no-repeat;
+    margin: 0 auto;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#banner .banner_download p:first-child{
+    background-position: -253px 0;
+    margin-top: 40px;
+}
+#banner .banner_download p:last-child{
+    background-position: -253px -25px;
+}
+/* 下载动画 */
+#banner .banner_download:hover p:first-child{
+    animation: 0.8s upMove;
+}
+@keyframes upMove{
+    0%{
+        transform: translateY(-10px);opacity: 0;
+    }
+    100%{
+        transform: translateY(0);opacity: 1;
+    }
+}
+#banner .banner_download:hover p:last-child{
+    animation: 0.8s downMove;
+}
+@keyframes downMove{
+    0%{
+        transform: translateY(10px);opacity: 0;
+    }
+    100%{
+        transform: translateY(0);opacity: 1;
+    }
+}
+/* 下载动画 */
+
+#banner .banner_user img{
+    border-radius: 50%;
+    margin: 70px auto 0 auto;
+    border: 2px solid #283257 ;
+}
+#banner .banner_user p{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin-top: 25px;
+}
+#banner .banner_user p a{
+    color: #4dffdb;
+    text-decoration:underline;
+}
+#banner .banner_list{
+    position: relative;
+    width: 497px;
+    height: 253px;
+    overflow: hidden;
+    margin: 15px 0 0 6px; 
+    
+}
+#banner .banner_list_ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+#banner .banner_list_ul li{
+    float: left;
+    width: 497px;
+    height: 253px;
+}
+#banner .banner_bottomzhezhao{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top:1px #514b55 solid;
+
+}
+#banner .banner_bottomzhezhao_ul{
+    text-align: center;
+    margin-top: 12px;
+}
+#banner .banner_bottomzhezhao_ul li{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/top.png) no-repeat -603px -299px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#banner .banner_bottomzhezhao_ul li.active{
+    background-position: -581px -299px;
+}
+#banner .banner_bootom_leftbtn,
+#banner .banner_bootom_rightbtn{
+    position: absolute;
+    display: none;
+    width: 12px;
+    height: 22px;
+    top: 10px;
+    cursor: pointer;
+    background: url(../images/top.png) no-repeat;
+}
+#banner .banner_bootom_leftbtn{
+    left: 10px;
+    background-position:-542px -297px;
+}
+#banner .banner_bootom_rightbtn{
+    right: 10px;
+    background-position:-555px -297px;
+}
+#banner .banner_bootom_leftbtn:hover{
+    background: url(../images/top.png) no-repeat -542px -326px;
+}
+#banner .banner_bootom_rightbtn:hover{
+    background: url(../images/top.png) no-repeat -555px -326px;
+}
+#banner .banner_list_lt,
+#banner .banner_list_rt,
+#banner .banner_list_rb,
+#banner .banner_list_lb{
+    width: 12px;
+    height: 12px;
+    background: url(../images/top.png) no-repeat;
+    position: absolute;
+}
+#banner .banner_list_lt{
+    left: -2px;
+    top: -6px;
+    background-position: -621px -299px;
+}
+#banner .banner_list_rt{
+    right: -2px;
+    top: -4px;
+    background-position: -634px -299px;
+}
+#banner .banner_list_rb{
+    left: -3px;
+    bottom: -2px;
+    background-position: -621px -312px;
+
+}
+#banner .banner_list_lb{
+    right: -4px;
+    bottom: -3px;
+    background-position: -636px -312px;
+}
+#banner .banner_right{
+    width: 209px;
+    height: 255px;
+    position: relative;
+    left: 11px;
+    top: 13px;
+}
+#banner .banner_right_lt,
+#banner .banner_right_rt,
+#banner .banner_right_rb,
+#banner .banner_right_lb{
+    width: 12px;
+    height: 12px;
+    background: url(../images/top.png) no-repeat;
+    position: absolute;
+}
+#banner .banner_right_lt{
+    left: -4px;
+    top: -5px;
+    background-position: -681px -298px;
+}
+#banner .banner_right_rt{
+    right: -4px;
+    top: -5px;
+    background-position: -698px -298px;
+}
+#banner .banner_right_rb{
+    right: -4px;
+    bottom: -4px;
+    background-position: -698px -313px;
+}
+#banner .banner_right_lb{
+    left: -4px;
+    bottom: -4px;
+    background-position: -681px -314px;
+}

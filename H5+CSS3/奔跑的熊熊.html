@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>running bear</title>
+    <style>
+        body{
+            background-color: #ccc;
+            margin: 0;
+            padding: 0;
+        }
+       .dashan{
+           position: relative;
+           width: 100%;
+           height: 569px;
+           background: url(images/bg2.png);
+           animation: dashan 60s linear infinite 4s;
+       }
+        .shan{
+            position: absolute;
+            bottom: 400px;
+            width: 100%;
+            height: 336px;
+            background: url(images/bg1.png);
+            animation: shan 20s linear infinite 4s;
+        }
+        .bear{
+            position: absolute;
+            top: 470px;
+            width: 200px;
+            height: 100px;
+            background: url(images/bear.png) no-repeat;
+            animation: bear 0.8s steps(8) infinite,move 5s forwards;
+        }
+
+        @keyframes bear{
+            0%{
+                
+                background-position: 0 0;
+            }
+            100%{
+                background-position: -1600px 0;
+            }
+        }
+        @keyframes move{
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 50%;
+                /* margin-left: -100px; */
+                transform: translateX(-50%);
+            }
+        }
+        @keyframes shan{
+            0%{
+                background-position: 0 0;
+            }
+
+            100%{
+                background-position: -3840px 0;
+            }
+        }
+        @keyframes dashan{
+            0%{
+                background-position: 0 0;
+            }
+
+            100%{
+                background-position: -3840px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashan"></div>
+    <div class="shan"></div>
+    <div class="bear"></div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辛辣田森</title>
+    <style>
+        .eye {
+            overflow: hidden;
+            position: relative;
+            width: 500px;
+            height: 200px;
+            border: 5px solid #333;
+            margin: 100px auto;
+            border-radius: 100% 5% 100% 0;
+            transform: rotate(5deg);
+            background-color:#a195ab ;
+        }
+
+        .tongkong {
+            position: absolute;
+            top: 89px;
+            left: 223px;
+            width: 20px;
+            height: 20px;
+            background-color: #171813;
+            border: 3px solid #453c4d;
+            border-radius: 50%;
+        }
+        .eye div[class^="quan"]{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #171813;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: quan 3s linear infinite;
+        }
+        .eye div.quan2{
+            animation-delay: 0.3s;
+        }
+        .eye div.quan3{
+            animation-delay: 0.6s;
+        }
+        .eye div.quan4{
+            animation-delay: 0.9s;
+        }
+        .eye div.quan5{
+            animation-delay: 1.2s;
+        }
+        .eye div.quan6{
+            animation-delay: 1.5s;
+        }
+        .eye div.quan7{
+            animation-delay: 1.8s;
+        }
+        .eye div.quan8{
+            animation-delay: 2.1s;
+        }
+        .eye div.quan9{
+            animation-delay: 2.4s;
+        }
+        .eye div.quan10{
+            animation-delay: 2.7s;
+        }
+        
+        @keyframes quan{
+            0%{
+
+            }
+            5%{
+                width: 100px;
+                height: 100px;
+            }
+            15%{
+                width: 150px;
+                height: 150px;
+            }
+            25%{
+                width: 200px;
+                height: 200px;
+            }
+            35%{
+                width: 250px;
+                height: 250px;
+            }
+            45%{
+                width: 300px;
+                height: 300px;
+            }
+            55%{
+                width: 350px;
+                height: 350px;
+            }
+            65%{
+                width: 400px;
+                height: 400px;
+            }
+            75%{
+                width: 450px;
+                height: 430px;
+            }
+            85%{
+                width: 500px;
+                height: 460px;
+            }
+            100%{
+                width: 550px;
+                height: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="eye">
+        <div class="tongkong">
+            <div class="quan1"></div>
+            <div class="quan2"></div>
+            <div class="quan3"></div>
+            <div class="quan4"></div>
+            <div class="quan5"></div>
+            <div class="quan6"></div>
+            <div class="quan7"></div>
+            <div class="quan8"></div>
+            <div class="quan9"></div>
+            <div class="quan10"></div>
+        </div>
+    </div>
+</body>
+
+</html>
